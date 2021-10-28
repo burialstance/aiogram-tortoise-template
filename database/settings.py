@@ -17,7 +17,9 @@ DATABASE_CONFIG = {
     'apps': {
         'models': {
             'models': [
-                'database.models.user'
+                'database.models.user',
+                'database.models.search_options',
+                'database.models.country'
             ]
         }
     },
