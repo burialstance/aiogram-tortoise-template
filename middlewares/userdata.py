@@ -26,4 +26,4 @@ class UserMiddleware(BaseMiddleware):
         await self.push_user_to_context(telegram_id=message.from_user.id, data=data)
 
     async def on_process_callback_query(self, callback_query: CallbackQuery, data: dict):
-        await self.push_user_to_context(telegram_id=callback_query.message.from_user.id, data=data)
+        await self.push_user_to_context(telegram_id=callback_query.from_user.id, data=data)
